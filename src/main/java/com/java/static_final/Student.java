@@ -9,8 +9,8 @@ public class Student {
 
     public Student(String name, int course) {
         count++;
-        name = this.name;
-        course = this.course;
+        this.name = name;
+        this.course = course;
         System.out.println("Student " + count + " was created");
     }
 

@@ -5,6 +5,7 @@ public class Student {
     String name;
     int course;
     static int count;
+    int a;
 
     public Student(String name, int course) {
         count++;
@@ -18,20 +19,25 @@ public class Student {
 
     }
 
-    public static void main(String[] args) {
-        Student st1 = new Student("Liza", 1);
-        Student st2 = new Student("Nina", 2);
-        Student st3 = new Student("Ivan", 3);
+    public void showInfo() {
+        System.out.println("Welcome to the student class");
+    }
 
-        System.out.println(Student.count);
-        showCount();
-        st2.showCount();
-        Student.showCount();
+    void abc() {
+        a++;
+        count++;
+    }
+
+    static void absd() {
+        count++;
+        //     a++;  there isn't an object.Without an object variable a doesn't  exist
+        Student st1 = new Student("Anna", 2);
+        st1.a++;
+    }
+
+    public static void main(String[] args) {
+
     }
 
 }
 
-class Test {
-
-
-}

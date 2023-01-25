@@ -1,4 +1,4 @@
-package com.java;
+package com.java.overloading;
 
 public class MethodOverloading2 {
     int sum(int i1, int i2) {

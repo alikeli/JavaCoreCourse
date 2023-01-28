@@ -25,6 +25,11 @@ public class Test3 {
                 }
             }
         }
+
+
+        for (; ; ) {
+            System.out.println("loop");
+        }
     }
 }
 

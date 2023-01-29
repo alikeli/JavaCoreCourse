@@ -13,5 +13,11 @@ public class Test2 {
         String s12 = "   String  ";
         System.out.println(s12);
         System.out.println(s12.trim());
+
+
+        String s14 = "   String  ";
+        System.out.println(s14);
+        System.out.println(s14.replace(' ', 'g'));
+        System.out.println(s14.replace("Stri", "pi"));
     }
 }

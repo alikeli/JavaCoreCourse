@@ -29,6 +29,23 @@ public class Test1 {
 
 
         System.out.println(list3.get(2));
+        list3.set(2, "Good morning");
+        for (String s : list3
+        ) {
+            System.out.print(s + " ");
+        }
+
+
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Ivanov");
+        names.add("Sidorov");
+        list2.addAll(names);
+        for (String s : list2) {
+            System.out.println(s);
+        }
+
+
+        System.out.println(list2.indexOf("Sidorov"));
 
 
     }

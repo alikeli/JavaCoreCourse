@@ -38,17 +38,19 @@ class Teacher extends Employee implements helpAble {
         System.out.println("Teach");
     }
 
-   public void help() {
+    public void help() {
         System.out.println("Pomogaet");
     }
+
     public void tushitPojar() {
         System.out.println("Tushit");
     }
 
 }
 
-class Driver extends Employee implements helpAble, swinAbel {
+class Driver extends Employee implements helpAble, swimAbel {
     String nameOfCar;
+
     void drive() {
         System.out.println("drive a car");
     }
@@ -76,6 +78,6 @@ interface helpAble {
     void tushitPojar();
 }
 
-interface swinAbel() {
+interface swimAbel {
     void swim();
 }

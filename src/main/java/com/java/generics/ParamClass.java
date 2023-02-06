@@ -15,7 +15,7 @@ public class ParamClass {
 
 }
 
-class Info<T> {
+class   Info<T> {
     private T value;
 
     public Info(T value) {

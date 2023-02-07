@@ -21,13 +21,23 @@ public class Test1 {
             System.out.println(o + " length = " + ((String) o).length());
         }
 
-        List list2 = new ArrayList<>();
-        list2.add(2);
-        list2.add(15);
-        list2.add(105);
+        ArrayList<Double> list2 = new ArrayList<>();
+        list2.add(2.2);
+        list2.add(15.0);
+        list2.add(105.5);
+        System.out.print("sum is =  ");
+        System.out.println(sum( list2));
+
+
+        ArrayList<Integer> list3 = new ArrayList<>();
+        list3.add(2);
+        list3.add(15);
+        list3.add(105);
+        System.out.print("sum is =  ");
+        System.out.println(sum(list3));
 
         for (Object o : list2) {
-            System.out.println(o );
+            System.out.println(o);
         }
 
 
@@ -39,6 +49,14 @@ public class Test1 {
 
     static void showListInfo(List<?> list) {
         System.out.println(" My list has next items  " + list);
+    }
+
+    public static double sum(ArrayList<? extends Number> al) {
+        double sum = 0;
+        for (Number n : al) {
+            sum += n.doubleValue();
+        }
+        return sum;
     }
 }
 

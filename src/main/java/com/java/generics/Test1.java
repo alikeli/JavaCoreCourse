@@ -21,5 +21,27 @@ public class Test1 {
             System.out.println(o + " length = " + ((String) o).length());
         }
 
+        List list2 = new ArrayList<>();
+        list2.add(2);
+        list2.add(15);
+        list2.add(105);
+
+        for (Object o : list2) {
+            System.out.println(o );
+        }
+
+
+        showListInfo(list);
+        showListInfo(list2);
+
     }
+
+
+    static void showListInfo(List<?> list) {
+        System.out.println(" My list has next items  " + list);
+    }
+}
+
+class Test3 {
+
 }

@@ -6,7 +6,7 @@ import java.util.List;
 public class ListIterator {
     public static void main(String[] args) {
 
-        String s = "Madam";
+        String s = "Madam2";
         List<Character> list = new ArrayList<>();
         for (char ch : s.toCharArray()) {
             list.add(ch);
@@ -24,7 +24,7 @@ public class ListIterator {
             }
 
         }
-        if (isPalindrome = true) {
+        if (isPalindrome) {
             System.out.println(s + " is Palindrome");
         } else {
             System.out.println( s + " not Palindrome");

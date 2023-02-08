@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+
 public class HashCodeEx1 {
     public static void main(String[] args) {
         Map<Student3, Double> map = new HashMap<>();
@@ -21,6 +22,10 @@ public class HashCodeEx1 {
         Student3 st5 = new Student3("Olga", "Sidorova", 4);
         boolean result = map.containsKey(st5);
         System.out.println("result = " + result);
+
+        for (Map.Entry<Student3, Double> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
     }
 
 
